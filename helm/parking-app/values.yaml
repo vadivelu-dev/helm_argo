@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: vadivelu123/parking_app_helm
-  tag: 20260606195930
+  tag: "latest"
 
 service:
   type: ClusterIP
