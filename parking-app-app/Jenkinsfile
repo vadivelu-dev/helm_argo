@@ -17,10 +17,7 @@ pipeline {
         stage('Set Image Tag') {
             steps {
                 script {
-                    env.IMAGE_TAG = sh(
-                        script: "date +%Y%m%d%H%M%S",
-                        returnStdout: true
-                    ).trim()
+                    env.IMAGE_TAG = "build-${env.BUILD_NUMBER}"
                 }
 
                 echo "Image Tag: ${env.IMAGE_TAG}"
