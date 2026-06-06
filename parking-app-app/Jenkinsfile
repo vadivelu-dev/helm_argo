@@ -23,7 +23,7 @@ pipeline {
                     ).trim()
                 }
 
-                echo "Image Tag: ${IMAGE_TAG}"
+                echo "Image Tag: ${env.IMAGE_TAG}"
             }
         }
 
