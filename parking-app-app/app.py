@@ -37,9 +37,9 @@ def find_parking():
     
     return redirect(google_maps_url)
 
-@app.route("/velu")
-def velu():
-    return render_template("velu.html")
+@app.route("/careers")
+def careers():
+    return render_template("careers.html")
 
 @app.route("/contact", methods=['GET', 'POST'])
 def contact():
